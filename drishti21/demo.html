@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="waves"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+    <script type="text/javascript">
+        var setVanta = () => {
+            if (window.VANTA) window.VANTA.WAVES({
+                el: ".waves",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x409,
+                shininess: 35.00,
+                waveHeight: 7.00,
+                waveSpeed: 0.85,
+                zoom: 0.73
+            })
+        }
+        setVanta()
+
+    </script>
+</body>
+
+</html>
